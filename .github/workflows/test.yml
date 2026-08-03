@@ -1,10 +1,14 @@
 
 name: Test
 
-on: [
-  pull_request,
-  push
-]
+# >>> ci-local:gated original triggers below, restore with `ci-local restore`
+# on: [
+#   pull_request,
+#   push
+# ]
+# <<< ci-local:gated
+on:
+  workflow_dispatch:
 
 jobs:
   build:

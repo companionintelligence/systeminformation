@@ -11,14 +11,18 @@
 #
 name: "CodeQL"
 
+# >>> ci-local:gated original triggers below, restore with `ci-local restore`
+# on:
+#   push:
+#     branches: [ "master" ]
+#   pull_request:
+#     # The branches below must be a subset of the branches above
+#     branches: [ "master" ]
+#   schedule:
+#     - cron: '27 18 * * 4'
+# <<< ci-local:gated
 on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    # The branches below must be a subset of the branches above
-    branches: [ "master" ]
-  schedule:
-    - cron: '27 18 * * 4'
+  workflow_dispatch:
 
 jobs:
   analyze:
