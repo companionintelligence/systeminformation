@@ -8,7 +8,7 @@
 
 <p align="center"><strong>System and OS information library for node.js</strong></p>
 
-<p align="center"><a href="#quick-start">Get started</a> · <a href="LICENSE">License</a></p>
+<p align="center"><a href="#quick-start">Get started</a> · <a href="LICENSE">License</a> · <a href="https://docs.ci.computer/docs/reference/open-source-systems">Systems map</a></p>
 
 <p align="center">
   <br>
