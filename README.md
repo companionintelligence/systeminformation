@@ -4,10 +4,13 @@
   </a>
 </p>
 
-<h3 align="center">systeminformation</h3>
+<h1 align="center">systeminformation</h1>
+
+<p align="center"><strong>System and OS information library for node.js</strong></p>
+
+<p align="center"><a href="#quick-start">Get started</a> · <a href="LICENSE">License</a></p>
 
 <p align="center">
-  System and OS information library for node.js
   <br>
   <a href="https://systeminformation.io/"><strong>Explore Systeminformation docs »</strong></a>
   <br>
