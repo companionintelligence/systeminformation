@@ -4,10 +4,13 @@
   </a>
 </p>
 
-<h3 align="center">systeminformation</h3>
+<h1 align="center">systeminformation</h1>
+
+<p align="center"><strong>System and OS information library for node.js</strong></p>
+
+<p align="center"><a href="#quick-start">Get started</a> · <a href="LICENSE">License</a> · <a href="https://docs.ci.computer/docs/reference/open-source-systems">Systems map</a></p>
 
 <p align="center">
-  System and OS information library for node.js
   <br>
   <a href="https://systeminformation.io/"><strong>Explore Systeminformation docs »</strong></a>
   <br>
@@ -1091,6 +1094,18 @@ Happy monitoring!
 Sincerely,
 
 Sebastian Hildebrandt, [+innovations](http://www.plus-innovations.com)
+
+<!-- companion-hub-readme-deep-review -->
+
+## Runtime support at a glance
+
+| Runtime | Project support |
+|---|---|
+| Node.js | Supported; see the installation and version notes in this README |
+| Bun | Supported |
+| Deno | Supported |
+
+The project exposes system-information functions rather than a persistent service: call only the functions needed for your platform and handle unsupported fields as unavailable. The detailed function reference and OS support matrix below remain the authoritative compatibility list; this summary is not a substitute for checking a function's individual support row.
 
 ## Credits
 
