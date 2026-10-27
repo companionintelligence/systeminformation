@@ -8,7 +8,16 @@
 
 <p align="center"><strong>System and OS information library for node.js</strong></p>
 
-<p align="center"><a href="#quick-start">Get started</a> · <a href="LICENSE">License</a> · <a href="https://docs.ci.computer/docs/reference/open-source-systems">Systems map</a></p>
+[![npm version](https://img.shields.io/npm/v/systeminformation?style=flat-square&color=0a6358)](https://www.npmjs.com/package/systeminformation)
+[![platform](https://img.shields.io/badge/platform-Node.js%20%C2%B7%20Bun%20%C2%B7%20Deno-0a6358?style=flat-square)](https://github.com/companionintelligence/systeminformation)
+[![MIT license][license-img]][license-url]
+[![Discord](https://img.shields.io/badge/chat-Discord-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.com/invite/yQp9hwpzAa)
+
+<p align="center"><a href="#quick-start">Get started</a> · <a href="LICENSE">License</a> · <a href="https://systeminformation.io/">Documentation</a> · <a href="https://docs.ci.computer/docs/reference/open-source-systems">Systems map</a></p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/systeminformation"><img src="https://img.shields.io/badge/Install%20from%20npm-Install%20from%20npm-0a6358?style=for-the-badge&logo=npm&logoColor=white" alt="Install from npm" height="30"></a>
+</p>
 
 <p align="center">
   <br>
@@ -22,14 +31,12 @@
   <a href="https://github.com/sebhildebrandt/systeminformation/blob/master/CHANGELOG.md">Changelog</a>
 </p>
 
-[![NPM Version][npm-image]][npm-url]
 [![NPM Downloads][downloads-image]][downloads-url]
 [![Git Issues][issues-img]][issues-url]
 [![Closed Issues][closed-issues-img]][closed-issues-url]
 <img src="docs/assets/no-dependencies.svg" alt="no dependencies">
 [![Sponsoring][sponsor-badge]][sponsor-url]
 [![Caretaker][caretaker-image]][caretaker-url]
-[![MIT license][license-img]][license-url]
 
 ## The Systeminformation Project
 
@@ -93,6 +100,28 @@ future proof. Read the [detailed version 5 changes][changes5-url].
 I did a lot of testing on different platforms and machines but of course there
 might be some issues that I am not aware of. I would be happy if you inform me
 when you discover any issues. Issues can be [opened here][new-issue].
+
+## Features
+
+| Capability | What it provides |
+|---|---|
+| **Hardware inventory** | Query CPU, memory, graphics, battery, disks and other attached devices. |
+| **Operating system data** | Read OS identity, uptime, services, processes, network interfaces and current load. |
+| **Runtime choices** | Use the documented Node.js, Bun and Deno runtimes with callbacks, Promises or async/await. |
+
+## How it fits together
+
+An application calls the library's JavaScript API; systeminformation gathers host data through platform-specific OS interfaces and returns normalized JavaScript results.
+
+```mermaid
+flowchart LR
+  App[Node.js, Bun or Deno app] --> API[systeminformation API]
+  API --> Adapter[Platform-specific collectors]
+  Adapter --> OS[Operating system and hardware]
+  OS --> Adapter
+  Adapter --> Result[Normalized JavaScript values]
+  Result --> App
+```
 
 ## Quick Start
 
