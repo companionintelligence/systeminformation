@@ -1095,6 +1095,18 @@ Sincerely,
 
 Sebastian Hildebrandt, [+innovations](http://www.plus-innovations.com)
 
+<!-- companion-hub-readme-deep-review -->
+
+## Runtime support at a glance
+
+| Runtime | Project support |
+|---|---|
+| Node.js | Supported; see the installation and version notes in this README |
+| Bun | Supported |
+| Deno | Supported |
+
+The project exposes system-information functions rather than a persistent service: call only the functions needed for your platform and handle unsupported fields as unavailable. The detailed function reference and OS support matrix below remain the authoritative compatibility list; this summary is not a substitute for checking a function's individual support row.
+
 ## Credits
 
 Written by Sebastian Hildebrandt
